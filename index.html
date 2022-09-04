@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Bootstrap website</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" href="#about">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Web designer</a></li>
+                  <li><a class="dropdown-item" href="#">Static Web page</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Creative Content </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" href="#gallery">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" href="#contact">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <header id="home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="pic4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pic2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pic3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
+       <!-- About section -->
+       <section class="main_heading my-5" id="about">
+        <div class="text-center">
+            <h2 class="display-4">About us</h2>
+            <hr  class="w-25 mx-auto"/>
+        </div>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xxl-6">
+                    <figure>
+                        <img src="about.jpg" class="img-fluid about_img" alt="about image">
+                    </figure>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xxl-6 d-flex justify-content-center align-items-start flex-column">
+                        <h2 class="mb-4">My Journey</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae sunt ex quaerat tempora dolorem quas qui mollitia maiores similique doloribus molestiae maxime quisquam dignissimos eius, odio perferendis, ipsa provident? Sint!</p>
+                        <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Who i am">Check More</button>
+                </div>
+            </div>
+        </div>
+       </section>
+       <!-- Services section -->
+       <section class="main_heading my-5 bg-light pt-5" id="services">
+        <div class="text-center">
+            <h2 class="display-4">Services</h2>
+            <hr  class="w-25 mx-auto"/>
+        </div>
+        <div class="container services">
+            <div class="row my-5">
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img src="s1.jpg" class="img-fluid" alt="services">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img src="s2.jpg" class="img-fluid" alt="services">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img src="s3.jpg" class="img-fluid" alt="services">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xxl-12 text-center my-5">
+                    <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Who i am">Check More</button>
+                </div>
+            </div>
+        </div>
+        </section>
+         <!-- Gallery section -->
+       <section class="main_heading my-5 pt-5" id="gallery">
+        <div class="text-center bg-light">
+            <h2 class="display-4">Projects</h2>
+            <hr  class="w-25 mx-auto"/>
+        </div>
+        <div class="container">
+            <div class="row gy-2 gx-3 my-5">
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <figure>
+                        <a href="#"> <img src="project1.PNG" alt="gallery" class="img-fluid"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <a>
+                        <a href="#"></a><img src="project2.PNG" alt="gallery" class="img-fluid"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <figure>
+                        <a href="#"> <img src="project3.PNG" alt="gallery" class="img-fluid"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <figure>
+                        <a href="#"> <img src="project4.PNG" alt="gallery" class="img-fluid"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <figure>
+                        <a href="#"></a><img src="project5.PNG" alt="gallery" class="img-fluid"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <figure>
+                        <a href="#"></a><img src="project6.PNG" alt="gallery" class="img-fluid"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <figure>
+                        <a href="#"></a><img src="project7.PNG" alt="gallery" class="img-fluid"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <figure>
+                        <a href="#"> </a><img src="project2.PNG" alt="gallery" class="img-fluid"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+                    <figure>
+                       <a href="#"> <img src="project3.PNG" alt="gallery" class="img-fluid"></a></a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Offer section -->
+        <section class="main_heading my-5 py-2 offer_style" id="offer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xxl-12 col-12 py-5 text-center">
+                        <h1 class="text-white">Check out my Projects</h1>
+                        <p>You can find better programmer to design and build your website. So check out now!</p>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Check Out 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                            <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                          </svg></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Portfolio Website</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>Are you sure you want to see Portfolio?</h4>
+          <p>Check Now!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="https://malportfolio.000webhostapp.com">
+          <button type="button" class="btn btn-primary">Check Now</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- Contact section -->
+        <section class="main_heading my-5 pt-5" id="contact">
+            <div class="text-center">
+                <h2 class="display-4">Contact Us</h2>
+                <hr  class="w-25 mx-auto"/>
+            </div>
+             <div class="container">
+                <div class="row">
+                    <div class="col-xxl-8 col-10 col-md-8 mx-auto">
+                        <form>
+                            <div class="mb-3">
+                              <label for="name" class="form-label">Name</label>
+                              <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              </div>
+                              <div class="mb-3">
+                                <label class="pr-4" for="Gender">Gender</label>
+                              <div class="form-check form-check-inline ">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Male</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Female</label>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleDataList" class="form-label">Select City</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search.">
+                        <datalist id="datalistOptions">
+                        <option value="San Francisco"></option>
+                        <option value="New York"></option>
+                        <option value="Seattle"></option>
+                        <option value="Los Angeles"></option>
+                        <option value="Chicago"></option>
+                                    </datalist>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <footer class="bg-secondary text-center text-white">
+            <p class="py-2">Made by Malaika & @copyright 2022 are reserved</p>
+        </footer>
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
